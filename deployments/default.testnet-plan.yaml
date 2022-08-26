@@ -1,0 +1,16 @@
+---
+id: 0
+name: Testnet deployment
+network: testnet
+stacks-node: "https://stacks-node-api.testnet.stacks.co"
+bitcoin-node: "http://blockstack:blockstacksystem@bitcoind.testnet.stacks.co:18332"
+plan:
+  batches:
+    - id: 0
+      transactions:
+        - contract-publish:
+            contract-name: desplitly5
+            expected-sender: ST1PRPSPV9CD3KDX3CMZNHXHT4XD2REWHC7P0YKYY
+            cost: 1581000
+            path: contracts/desplitly.clar
+            anchor-block-only: true
